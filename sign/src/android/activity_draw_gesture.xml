@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+       <RelativeLayout
+        android:id="@+id/topLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    
+     <Button
+       android:id="@+id/saveBt"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" 
+       android:layout_alignParentLeft="true"
+       android:layout_marginLeft="30dip"
+       android:layout_marginTop="5dip"
+       android:text="保存签名"
+       />
+   <Button
+       android:id="@+id/clearBt"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" 
+       android:layout_alignParentRight="true"
+       android:layout_marginRight="30dip"
+       android:layout_marginTop="5dip"
+       android:text="清除签名"
+       />
+   </RelativeLayout>
+   
+   
+   <android.gesture.GestureOverlayView 
+       android:id="@+id/gesture"
+       android:layout_width="fill_parent"
+       android:layout_height="fill_parent"
+       >    
+   </android.gesture.GestureOverlayView>
+
+  
+</LinearLayout>
